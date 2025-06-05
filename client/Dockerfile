@@ -22,6 +22,7 @@ FROM nginx:alpine
 
 # Copy the build output from the previous stage (build-stage) into Nginx's HTML folder
 COPY --from=build-stage /app/dist /usr/share/nginx/html
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Expose the port
 EXPOSE 80

@@ -20,7 +20,6 @@ spec:
             cpu: "500m"
         ports:
         - containerPort: 8080
-        imagePullPolicy: Never
         env:
         - name: MONGO_URI
           valueFrom:

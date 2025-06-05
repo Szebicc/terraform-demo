@@ -20,3 +20,6 @@ Content-Type:  application/json
 {
   "name": "asd"
 }
+
+//nginx frontend multistage 
+//ingress controller
