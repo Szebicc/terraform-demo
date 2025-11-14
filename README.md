@@ -1,58 +1,51 @@
 # Employee Data
 
-## Server side
+![License](https://img.shields.io/badge/license-MIT-blue.svg) ![Backend](https://img.shields.io/badge/Node.js-Express-green) ![Frontend](https://img.shields.io/badge/React-Vite-blue)
 
-### Install dependencies
-```bash
-cd ./server
-npm install
-```
+A full-stack application to manage employee data with a REST API backend and a modern React frontend.
 
-### .env file
-Copy the .env.sample as .env and fill up the environment variable for your personal mongodb connecttion url.
+[View Demo](#usage) · [Report Bug](https://github.com/your_username/employee-data/issues/new) · [Request Feature](https://github.com/your_username/employee-data/issues/new)
 
-### Prepare the database
+## Table of Contents
 
-```bash
-cd ./server
-npm run populate
-```
+1. [About The Project](#about-the-project)
+2. [Built With](#built-with)
+3. [Getting Started](#getting-started)
+   - [Prerequisites](#prerequisites)
+   - [Installation](#installation)
+4. [Usage](#usage)
+5. [Roadmap](#roadmap)
+6. [Contributing](#contributing)
+7. [License](#license)
+8. [Contact](#contact)
+9. [Acknowledgments](#acknowledgments)
 
-**populate command** will run the populate.js file as a script and it will generate a buch of starter data for your database. 
+## About The Project
 
-### Running the code
+Employee Data is a full-stack application designed to manage employee information efficiently. It features a Node.js/Express backend with a MongoDB database and a React frontend powered by Vite. This project is ideal for developers learning full-stack development or businesses needing a lightweight employee management system.
 
-```bash
-cd ./server
-npm run dev
-```
+**Why use Employee Data?**
+- **Streamlined Setup**: Prebuilt scripts to populate your database with starter data.
+- **Developer-Friendly**: Includes REST API endpoints and a `test.http` file for easy testing.
+- **Modern Stack**: Built with industry-standard tools like React, Node.js, and MongoDB.
 
-It will start the server with nodemon. So it will watch the changes and restart the server if some ot the files changed.
+## Built With
 
-### Testing with test.http
+- [Node.js](https://nodejs.org/) - Backend runtime
+- [Express](https://expressjs.com/) - Backend framework
+- [MongoDB](https://www.mongodb.com/) - Database
+- [React](https://reactjs.org/) - Frontend library
+- [Vite](https://vitejs.dev/) - Frontend build tool
 
-If you like to try the endpoints of the rest api, you can check the test.http file for urls are should work on your environment as well. And if you install the [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) extenstion for vscode you can actually run those in your editor.
+## Getting Started
 
+Follow these steps to set up the Employee Data project locally.
 
+### Prerequisites
 
-## Client side
-
-### Install dependencies
-
-```bash
-cd ./client
-npm install
-```
-
-### Proxy
-
-Watch for the port of your rest api. By default it will bind on port 8080 and the frontend proxy settings also depend on this configuration. If you for some reasons change the port of the backend, don't forget to change the ./client/vite.config.js proxy settings as well.
-
-### Runnig the code
-
-```bash
-cd ./client
-npm run dev
-```
-
-And Vite will start your frontend on the 5173 port and you can visit the http://localhost:5173 on your preferred browser.
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (v16 or higher)
+- [MongoDB](https://www.mongodb.com/) (local or cloud instance)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
+  ```bash
+  npm install npm@latest -g
